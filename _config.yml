@@ -1,2 +1,24 @@
-name: Christmas Recipes
-markdown: redcarpet
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            My R-blog
+tagline:          'Some stuff about my programming'
+description:      'A place to share interesting things about statistics, shape models and programming'
+url:              https://github.com/zarquon42b
+
+author:
+  name:           'Stefan Schlager'
+  url:            https://github.com/zarquon42b
+
+paginate:         5
+
+# Custom vars
+version:          2.0.0
+
+github:
+  repo:           https://github.com/poole/hyde

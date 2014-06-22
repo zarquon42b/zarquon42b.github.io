@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>My R-blog</title>
+ <link href="https://github.com/zarquon42b/atom.xml" rel="self"/>
+ <link href="https://github.com/zarquon42b/"/>
+ <updated>2014-06-22T13:40:34+02:00</updated>
+ <id>https://github.com/zarquon42b</id>
+ <author>
+   <name>Stefan Schlager</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>My first test entry</title>
+   <link href="https://github.com/zarquon42b/2014/06/22/initial-entry/"/>
+   <updated>2014-06-22T00:00:00+02:00</updated>
+   <id>https://github.com/zarquon42b/2014/06/22/initial-entry</id>
+   <content type="html">&lt;p&gt;Hello world!&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
