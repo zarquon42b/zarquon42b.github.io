@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>My R-blog</title>
- <link href="https://github.com/zarquon42b/atom.xml" rel="self"/>
- <link href="https://github.com/zarquon42b/"/>
- <updated>2014-06-23T14:51:09+02:00</updated>
- <id>https://github.com/zarquon42b</id>
+ <link href="http://zarquon42b.github.io/atom.xml" rel="self"/>
+ <link href="http://zarquon42b.github.io/"/>
+ <updated>2014-06-23T14:56:52+02:00</updated>
+ <id>http://zarquon42b.github.io</id>
  <author>
    <name>Stefan Schlager</name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Initial draft of RvtkStatismo</title>
-   <link href="https://github.com/zarquon42b/2014/06/23/RvtkStatismo/"/>
+   <link href="http://zarquon42b.github.io/2014/06/23/RvtkStatismo/"/>
    <updated>2014-06-23T00:00:00+02:00</updated>
-   <id>https://github.com/zarquon42b/2014/06/23/RvtkStatismo</id>
+   <id>http://zarquon42b.github.io/2014/06/23/RvtkStatismo</id>
    <content type="html">&lt;p&gt;I am currently writing an implementation of the shape modelling library &lt;strong&gt;&lt;a href=&quot;https://github.com/statismo/statismo&quot;&gt;Statismo&lt;/a&gt;&lt;/strong&gt; into R. Now, after a week of nightly madness, I have got somewhat acquainted with &lt;strong&gt;&lt;a href=&quot;https://github.com/statismo/statismo&quot;&gt;Statismo&lt;/a&gt;&lt;/strong&gt; and learned a lot about C++ programming. &lt;/p&gt;
 
 &lt;h4&gt;About RvtkStatismo&lt;/h4&gt;
