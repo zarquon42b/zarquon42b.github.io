@@ -9,11 +9,11 @@ permalink:        pretty
 title:            My R-blog
 tagline:          'Some stuff about my programming'
 description:      'A place to share interesting things about statistics, shape models and programming'
-url:              https://github.com/zarquon42b
+url:              http://zarquon42b.github.io
 
 author:
   name:           'Stefan Schlager'
-  url:            https://github.com/zarquon42b
+  url:            http://zarquon42b.github.io
 
 paginate:         5
 
