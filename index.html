@@ -3,6 +3,10 @@ layout: default
 title: Home
 ---
 
+  
+<h1 style="font-family:Abril Fatface, serif;
+  font-size: 2.5rem;margin-bottom:4rem;">BlogPosts</h1></b>
+  
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -14,7 +18,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    <!--{{ post.content }}-->
   </div>
   {% endfor %}
 </div>
