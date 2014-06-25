@@ -4,8 +4,7 @@ title: Home
 ---
 
   
-<h1 style="font-family:Abril Fatface, serif;
-  font-size: 2.5rem;margin-bottom:4rem;">BlogPosts</h1></b>
+<h1 class="mainheader">BlogPosts</h1></b>
   
 <div class="posts">
   {% for post in paginator.posts %}
@@ -17,7 +16,7 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
+    <span class="post-excerpt">{{ post.excerpt | truncatewords: 20 }}</span>
     <!--{{ post.content }}-->
   </div>
   {% endfor %}
