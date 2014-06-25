@@ -1,0 +1,4 @@
+[diff "pdf"]
+	binary = true
+        textconv = pdf2txt
+
