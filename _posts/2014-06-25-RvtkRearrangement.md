@@ -4,7 +4,7 @@ tag: RvtkStatismo R
 title: class pPCA and rearrangements in RvtkStatismo
 ---
 
-I got rid of the ugly bastard class ```pPCAconstr```! Now there is only one shape model class that can be restricted by defining existing/missing coordinates and a given specific shap (function ```ComputeConstrainedModel()``` (I have not yet looked at the statismo methods to restrict a model, though).
+I got rid of the ugly bastard class ```pPCAconstr```! Now there is only one shape model class that can be restricted by defining existing/missing coordinates and a given specific shape (function ```ComputeConstrainedModel()``` (I have not yet looked at the statismo methods to restrict a model, though).
 
 ###Header files
 Header files now reside in inst/include, thus future packages may use the already implemented routines (e.g. conversion between statismo and pPCA) by adding 
