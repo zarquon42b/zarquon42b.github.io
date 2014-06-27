@@ -1,6 +1,7 @@
 ---
 layout: post
 tag: RvtkStatismo R S4
+date: 2014-06-27 16:25:00 +0200
 title: S4 classes now in master branch
 ---
 
