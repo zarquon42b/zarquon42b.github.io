@@ -8,13 +8,14 @@ title: Retrodeformation of a surface mesh based on bilateral landmarks (videos i
 Forget what I said about Pandora's Box some weeks ago, that was complete nonsense, implementing stuff is still as hard as ever. I spent the last week implementing a symmetrizing algorithm that tries to reverse bending and local stretching caused for example by taphonomic processes. Unfortunately, the paper [[1]](#1) was quite obscure and I had to do a significant amount of literature research. But finally it worked out. Watch the visualizations of the deformation processes: 
 
 
+<center>
 
 <video width="420" height="315" controls> <source src="/resources/videos/frontview.webm" frameborder="0" allowfullscreen> </video>
 
 <video width="420" height="315" controls> <source src="/resources/videos/bottomview.webm" frameborder="0" allowfullscreen> </video>
 
 <video width="420" height="315" controls> <source src="/resources/videos/topview.webm" frameborder="0" allowfullscreen> </video>
-
+</center>
 
 
 **References**
