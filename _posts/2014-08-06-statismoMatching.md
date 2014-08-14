@@ -9,6 +9,10 @@ I finally found some time to properly implement statismo models into the surface
 
 Here is an example how to do this:
 
+###CAVEAT:
+<font color="#FF0000"><b>You need to install latest version from master branch of mesheR, RvtkStatismo and Morpho !!</b>
+</font>
+
 ```r
 require(RvtkStatismo)
 require(Rvcg)
