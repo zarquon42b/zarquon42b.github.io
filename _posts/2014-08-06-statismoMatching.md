@@ -68,27 +68,7 @@ wire3d(modelsurf,col=2)
 And here is an example with Marcel's Femur surfaces:
 
 ```r
-require(RvtkStatismo)
-require(Rvcg)
-require(Morpho)
-require(mesheR)
-require(rgl)
-###get the data
-download.file(url="https://github.com/marcelluethi/statismo-shaperegistration/raw/master/data/VSD001_femur.vtk","./VSD001_femur.vtk",method = "w")
-download.file(url="https://github.com/marcelluethi/statismo-shaperegistration/raw/master/data/VSD002_femur.vtk","./VSD002_femur.vtk",method = "w")
-download.file(url="https://github.com/marcelluethi/statismo-shaperegistration/raw/master/data/VSD001-lm.csv","./VSD001-lm.csv",method = "w")
-download.file(url="https://github.com/marcelluethi/statismo-shaperegistration/raw/master/data/VSD002-lm.csv","./VSD002-lm.csv",method = "w")
 
-ref <- read.vtk("VSD001_femur.vtk")
-tar <- read.vtk("VSD002_femur.vtk")
-
-ref.lm <- as.matrix(read.csv("VSD001-lm.csv",row.names=1))
-tar.lm <- as.matrix(read.csv("VSD002-lm.csv",row.names=1))
-mymod <- statismoModelFromRepresenter(ref,kernel=list(c(50,50),c(10,10)),ncomp = 100)
-
-Bayes <- createBayes(mymod,sdmax = rep(6,10))
-
-matchGP <- gaussMatch(ref,tar,lm1 = ref.lm,lm2=tar.lm,sigma = 30,gamma=4,smooth=1,smoothit = 4,smoothtype = "t",iterations = 15,toldist = 50,angtol = pi/2,Bayes=Bayes,similarity = list(iterations=10,rhotol=pi/2),affine = list(iterations=10,rhotol=pi/2))
 require(RvtkStatismo)
 require(Rvcg)
 require(Morpho)
