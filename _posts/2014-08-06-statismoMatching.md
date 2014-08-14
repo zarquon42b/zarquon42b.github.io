@@ -24,7 +24,7 @@ mymod <- statismoModelFromRepresenter(dummyhead.mesh,kernel = list(c(50,50),c(20
 
 ##now create an object of class BayesDeform
 
-Bayes <- createBayes(mymod,sdmax=c(rep(3,5),ptValueNoise = 2))# this means that the first 5 elastic iterations are restricted to be within 3 standard deviations of our model and we attribute some point noise for the landmarks
+Bayes <- createBayes(mymod,sdmax=c(rep(3,5),ptValueNoise = 2))# this means that the first 5 elastic iterations are restricted to be within 3 standard deviations of our model and we provide some point noise for the landmarks
 ## setup parameters for AmbergRegister
 params <- list(iterations=10)
 params <- append(params, list(
