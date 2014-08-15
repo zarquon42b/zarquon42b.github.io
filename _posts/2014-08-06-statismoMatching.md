@@ -78,7 +78,7 @@ require(rgl)
 download.file(url="https://github.com/marcelluethi/statismo-shaperegistration/raw/master/data/VSD001_femur.vtk","./VSD001_femur.vtk",method = "w")
 download.file(url="https://github.com/marcelluethi/statismo-shaperegistration/raw/master/data/VSD002_femur.vtk","./VSD002_femur.vtk",method = "w")
 download.file(url="https://github.com/marcelluethi/statismo-shaperegistration/raw/master/data/VSD001-lm.csv","./VSD001-lm.csv",method = "w")
-download.file(url="https://github.com/marcelluethi/statismo-shaperegistration/raw/master/data/VSD001-lm.csv","./VSD002-lm.csv",method = "w")
+download.file(url="https://github.com/marcelluethi/statismo-shaperegistration/raw/master/data/VSD002-lm.csv","./VSD002-lm.csv",method = "w")
 
 ref <- read.vtk("VSD001_femur.vtk")
 tar <- read.vtk("VSD002_femur.vtk")
@@ -100,4 +100,5 @@ require(Morpho)
 deformGrid3d(matchGP,ref,size=0.1,type="p")
 
 ```
+
 <img src="/resources/images/fig4.png"  style="width: 550px">
