@@ -100,5 +100,18 @@ require(Morpho)
 deformGrid3d(matchGP,ref,size=0.1,type="p")
 
 ```
-
 <img src="/resources/images/fig4.png"  style="width: 550px">
+
+###EDIT: 
+I just realized, that we actually do not need smoothing (to prevent mesh-folding) if we use statistical models because the model carries us pretty close to a valid target shape:
+
+```r
+
+matchGPNoSmooth <- gaussMatch(ref,tar,lm1 = ref.lm,lm2=tar.lm,sigma = 30,gamma=4,smooth=NULL,iterations = 15,toldist = 50,angtol = pi/2,Bayes=Bayes,similarity = similarity,affine = affine)
+```
+Now, when looking at the deformed reference, we can still see the mesh structure produced by marching cubes (so I assume):
+<img src="/resources/images/fig5.png"  style="width: 650px">
+
+
+
+
