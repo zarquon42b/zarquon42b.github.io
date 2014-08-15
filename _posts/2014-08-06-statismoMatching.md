@@ -93,7 +93,7 @@ Bayes <- createBayes(mymod,sdmax = rep(6,10))##restrict first 10 iterations to m
 similarity = list(iterations=10,rhotol=pi/2)
 affine = list(iterations=10,rhotol=pi/2)
 
-matchGP <- gaussMatch(ref,tar,lm1 = ref.lm,lm2=tar.lm,sigma = 30,gamma=4,smooth=1,smoothit = 10,smoothtype = "t",iterations = 15,toldist = 50,angtol = pi/2,Bayes=Bayes,similarity = similarity,affine = affine,rhotol=pi/2))
+matchGP <- gaussMatch(ref,tar,lm1 = ref.lm,lm2=tar.lm,sigma = 30,gamma=4,smooth=1,smoothit = 10,smoothtype = "t",iterations = 15,toldist = 50,angtol = pi/2,Bayes=Bayes,similarity = similarity,affine = affine)
 
 ## view displacement field (figure below):
 require(Morpho)
