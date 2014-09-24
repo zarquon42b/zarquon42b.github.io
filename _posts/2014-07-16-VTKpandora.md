@@ -1,6 +1,8 @@
 ---
 layout: post
-tag: vtk RvtkStatismo
+tags: 
+- vtk 
+- RvtkStatismo
 date: 2014-07-16 10:09:00 +0200
 title: VTK - Opening Pandora's Box
 ---

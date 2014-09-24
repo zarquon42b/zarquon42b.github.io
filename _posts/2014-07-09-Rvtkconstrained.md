@@ -1,6 +1,8 @@
 ---
 layout: post
-tag: RvtkStatismo R
+tags: 
+- RvtkStatismo 
+- R
 date: 2014-07-09 15:25:00 +0200
 title: RvtkStatismo - constrained model
 ---

@@ -1,6 +1,9 @@
 ---
 layout: post
-tag: RvtkStatismo R S4
+tags: 
+- RvtkStatismo 
+- R 
+- S4
 date: 2014-07-01 15:05:00 +0200
 title: RvtkStatismo - update and some fixes
 ---

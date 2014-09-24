@@ -1,6 +1,7 @@
 ---
 layout: post
-tag: R rdf
+tags: 
+- R 
 date: 2014-07-30 12:59:00 +0200
 title: Retrodeformation of a surface mesh based on bilateral landmarks (videos inside)
 ---

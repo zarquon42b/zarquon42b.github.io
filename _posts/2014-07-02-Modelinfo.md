@@ -1,6 +1,9 @@
 ---
 layout: post
-tag: RvtkStatismo R S4
+tags: 
+- RvtkStatismo 
+- R 
+- S4
 date: 2014-07-02 11:25:00 +0200
 title: RvtkStatismo now supports im- and export of ModelInfo
 ---

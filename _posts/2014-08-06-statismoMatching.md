@@ -1,6 +1,10 @@
 ---
 layout: post
-tag: R RvtkStatismo registration
+tags: 
+- R 
+- RvtkStatismo 
+- registration
+
 date: 2014-08-14 13:40:00 +0200
 title: Use statismo models for elastic mesh registration in R
 ---

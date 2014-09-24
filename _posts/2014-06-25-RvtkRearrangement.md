@@ -1,6 +1,8 @@
 ---
 layout: post
-tag: RvtkStatismo R
+tags: 
+- RvtkStatismo 
+- R
 title: class pPCA and rearrangements in RvtkStatismo
 ---
 

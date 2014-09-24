@@ -1,6 +1,8 @@
 ---
 layout: post
-tag: RvtkStatismo R
+tags: 
+- RvtkStatismo 
+- R
 title: Initial draft of RvtkStatismo
 ---
 

@@ -1,6 +1,9 @@
 ---
 layout: post
-tag: RvtkStatismo R S4
+tags: 
+- RvtkStatismo 
+- R 
+- S4
 date: 2014-06-30 17:40:00 +0200
 title: RvtkStatismo - (almost) all members of statismo::StatisticalModel implemented
 ---
