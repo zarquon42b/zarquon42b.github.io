@@ -9,7 +9,7 @@ title: Getting nice deformations with (Rvtk)Statismo
 
 ---
 
-I started a new project involving surface matching of talus bones and I have to say, using statismo in the registration process definitely pays off. 
+I got involved in a project that includes surface matching of talus bones (Hi Peter) and I using (Rvtk)Statismo in the registration process definitely pays off. 
 Using a model generated for the atlas allows for nice controlling the shape deformation involved - even with my elastic ICP procedures from [mesheR](https://github.com/zarquon42b/mesheR).
 
 While the first couple of targets could be matched easily in the way of [my  last post](http://zarquon42b.github.io/2014/08/14/statismoMatching/), there was one bugger, quite different from the rest with a very wide articulation area.
