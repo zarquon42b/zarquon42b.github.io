@@ -9,10 +9,10 @@ title: Getting nice deformations with (Rvtk)Statismo
 
 ---
 
-I got involved in a project that includes surface matching of talus bones (Hi Peter) and I using (Rvtk)Statismo in the registration process definitely pays off. 
+I got involved in a project that includes surface matching of talus bones (Hi Peter) and using (Rvtk)Statismo in the registration process definitely pays off. 
 Using a model generated for the atlas allows for nice controlling the shape deformation involved - even with my elastic ICP procedures from [mesheR](https://github.com/zarquon42b/mesheR).
 
-While the first couple of targets could be matched easily in the way of [my  last post](http://zarquon42b.github.io/2014/08/14/statismoMatching/), there was one bugger, quite different from the rest with a very wide articulation area.
+While the first couple of targets could be matched easily in the way of [my last post](http://zarquon42b.github.io/2014/08/14/statismoMatching/), there was one bugger, quite different from the rest with a very wide articulation area.
 
 ###Coarse registration
 The approach hereby was to use a smoothed gaussian displacement field (function ```gaussMatch```)[[1]](#1) with the displacement restricted by a deform as specified by [[2]](#2). The resulting displacement is then regularized by the statismo model (simply by calculating a weighted average for each displacement - one from suggested by the ICP and one from its counterpart projected into model space). 
