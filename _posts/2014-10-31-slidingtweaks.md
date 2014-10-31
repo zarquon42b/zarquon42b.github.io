@@ -8,7 +8,7 @@ date: 2014-10-31 10:05:00 +0200
 title: Morpho&#58; massive improvements in performance of semi-landmark sliding
 ---
 
-On my visit of the MPI in Leipzig (which was great, thanks a lot!!), Philip Gunz told me about a method ([proposed by Demetris Halazonetis](http://www.dhal.com/downloads/CompactSlidingSemilandmarks.pdf)) that could improve computation time and memory footprint for the relaxation of semi-landmarks, which are serious restrictions on the maximum amount of coordinates usable with this method. So I spend the best part of Wednesday night and the 6-hour train ride home to tweak the underlying subroutines, making use of the excellent R-package ```Matrix``` and its large variety of classes for all kinds of sparse/triangle/symmetric matrices.
+On my visit of the MPI in Leipzig (which was great, thanks a lot!!), Philip Gunz told me about a method ([proposed by Demetris Halazonetis](http://www.dhal.com/downloads/CompactSlidingSemilandmarks.pdf)) that could improve computation time and memory footprint for the relaxation of semi-landmarks, which are serious restrictions on the maximum amount of coordinates usable with this method. So I spent the best part of Wednesday night and the 6-hour train ride home to tweak the underlying subroutines, making use of the excellent R-package ```Matrix``` and its large variety of classes for all kinds of sparse/triangle/symmetric matrices.
 At the end I was able to run the examples in my package on my netbook as fast as the untweaked version on my desktop workstation. 
 
 So when I arrived at the office this morning, I was eager to compare benchmarks between those version on my machine. The hardware specs are:
