@@ -10,8 +10,9 @@ title: Benchmarking continued&#58; sliding performance using different BLAS impl
 
 Out of couriosity on how far I could tweak the performance of the sliding of semi-landmarks I also ran the benchmarks using different BLAS  (Basic Linear Algebra Subprograms) implementations:
 
-*[ATLAS](http://math-atlas.sourceforge.net/)
-*[OpenBLAS](https://github.com/xianyi/OpenBLAS)
+
+ * [ATLAS](http://math-atlas.sourceforge.net/)
+ * [OpenBLAS](https://github.com/xianyi/OpenBLAS)
 
 **Hardware specs:** 
 
