@@ -43,16 +43,16 @@ cmodS <- statismoConstrainModel(mymodScale,tar.lm,ref.lm,2)
 ###Here are the results (*green*=reference/constrained model mean):
 <figure>
   <img src="/resources/images/origstate.png" alt="origstate" width="400" >
-  <figcaption>Fig. 1: Original state with landmarks.</figcaption>
+  <figcaption><b>Fig. 1:</b> Original state with landmarks.</figcaption>
 </figure> 
 <figure>
   <img src="/resources/images/constNoScale.png" alt="The Pulpit Rock" width="400">
-  <figcaption>Fig. 2: The constrained GP model without scaling.</figcaption>
+  <figcaption><b>Fig. 2:</b> The constrained GP model without scaling.</figcaption>
 </figure> 
 
 <figure>
   <img src="/resources/images/constScale.png" alt="The Pulpit Rock" width="400">
-  <figcaption>Fig.3: The constrained GP model supplemented with isotropic scaling.</figcaption>
+  <figcaption><b>Fig.3:</b> The constrained GP model supplemented with isotropic scaling.</figcaption>
 </figure>
 
 

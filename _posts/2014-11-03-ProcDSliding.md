@@ -14,7 +14,7 @@ So, I implemented it and tested a bit and found out that it may lead to odd dist
 Here are the tests (you will need to install "fastslide" branch from [GitHub](https://github.com/zarquon42b/Morpho/tree/fastslide)):
 <figure>
   <img src="/resources/images/orig.png" alt="bending" width="250" >
-  <figcaption style="font-size:small;"><b>Fig. 1: </b>Red: semi-landmarks displaying a nose. </br>Black: semi-landmarks displaying a grotesquely long nose.</figcaption>
+  <figcaption"><b>Fig. 1: </b>Red: semi-landmarks displaying a nose. Black: semi-landmarks displaying a grotesquely long nose.</figcaption>
 </figure> 
 
 
@@ -43,25 +43,24 @@ angle.calc(rotProcD$X,rotProcD$Y)
 #[1] 0.227266
 
 ```
-<table style="border-collapse: collapse;">
+<table>
     <tr>
         <td>
-            <figure style="float:left;">
+            <figure>
                 <img src="/resources/images/bending.png" alt="bending" height="200" >
-                <figcaption style="font-size:small;"><b>Fig. 2: </b>Cyan: relaxed using bending energy, Red: original.</figcaption>
+                <figcaption><b>Fig. 2: </b>Cyan: relaxed using bending energy, Red: original.</figcaption>
             </figure>
         </td>
     
         <td>
             <figure >
                 <img src="/resources/images/ProcD.png" alt="bending" height="200" >
-                <figcaption style="font-size:small;"><b>Fig. 3:</b> Blue: relaxed using Procrustes distance, Red: original.</figcaption>
+                <figcaption"><b>Fig. 3:</b> Blue: relaxed using Procrustes distance, Red: original.</figcaption>
             </figure> 
        </td>
     </tr>
-</table>    
-
-
+</table>   
+ 
 
 
 ##Conclusion
