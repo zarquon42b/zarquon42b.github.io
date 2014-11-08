@@ -34,13 +34,13 @@ relaxBending <- relaxLM(semi,semilong, mesh=shortnose.mesh, iterations=3,SMvecto
 deformGrid3d(semi, relaxBending,col2=5)##smoothly deformed (see Fig 2.)
 rotB <- rotonto(relaxBending,semilong)##align relaxed and reference
 angle.calc(rotB$X,rotB$Y)
-#[1] 0.251212
+#[1] 0.2488887
 
 relaxProcD <- relaxLM(semi,semilong, mesh=shortnose.mesh, iterations=3,SMvector=1:nrow(semi), deselect=F,surp=1:nrow(semi),bending=F)
 deformGrid3d(semi, relaxProcD,col2=4)##awkwardly deformed (see Fig 3.)
 rotProcD <- rotonto(relaxProcD,semilong)
 angle.calc(rotProcD$X,rotProcD$Y)
-#[1] 0.227266
+#[1] 0.1900396
 
 ```
 <table>
