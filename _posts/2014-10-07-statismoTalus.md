@@ -31,8 +31,8 @@ In a final step we simply use the result from the procedure and the function ```
 
 ###Results
 And here are the heatmap and displacement field: 
-<img src="/resources/images/heatmapTalus.png"  style="height: 300px; float: left">
-<img src="/resources/images/displaceTalus.png"  style="height: 300px">
+  <img rel="zoom" src="/resources/images/heatmapTalus.png"  style="height: 300px; float: left">
+  <img rel="zoom" src="/resources/images/displaceTalus.png"  style="height: 300px">
 
 ###Timing
 The timing is about 7 minutes for both registration processes, but could be improved by using a decimated mesh for the first registration.
