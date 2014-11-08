@@ -23,7 +23,7 @@ require(Morpho)
 require(Rvcg)
 data(nose)
 semi <- vcgSample(shortnose.mesh,SampleNum = 1000,type="km")## subsample 1000 semi-landmarks on a surface
-semilong <- tps3d(semi,shortnose.lm,longnose1)## deform it to be a long nose
+semilong <- tps3d(semi,shortnose.lm,longnose.lm)## deform it to be a long nose
 ## calculate original Procrustes distance between shapes
 rotOrig <- rotonto(semi,semilong)#
 angle.calc(rotOrig$X,rotOrig$Y)
