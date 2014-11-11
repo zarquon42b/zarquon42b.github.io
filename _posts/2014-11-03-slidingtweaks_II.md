@@ -43,7 +43,7 @@ OpenBLAS, beating ATLAS at 4000 semi-landmarks by impressive 12.2 seconds:
 
 
 <figure>
-  <img src="/resources/images/BLAScompare.png" alt="performance of sliding routine" width="500" >
+    <img rel="zoom" src="/resources/images/BLAScompare.png" alt="performance of sliding routine" width="500" >
   <figcaption><b>Fig. 1: </b>Blue: OpenBLAS, Green: ATLAS.</figcaption>
 </figure> 
 

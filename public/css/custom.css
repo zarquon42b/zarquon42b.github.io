@@ -17,3 +17,38 @@
     color: #9a9a9a;
     font-size: 0.7rem;
 }
+
+img[rel~="zoom"] {
+    cursor:-webkit-zoom-in;
+    cursor:-moz-zoom-in;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    
+    text-align: center;
+    display: table;
+    max-width: 50%; /* demo; set some amount (px or %) if you can */
+    margin: 10px auto; /* not needed unless you want centered */
+    font-size:0.8em;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.center {
+    align: center;
+}
+
+table figure {
+    text-align: center;
+    display: table;
+    max-width: 80%; /* demo; set some amount (px or %) if you can */
+    margin: 10px auto; /* not needed unless you want centered */
+    font-size:0.8em;
+}

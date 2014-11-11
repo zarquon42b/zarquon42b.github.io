@@ -75,7 +75,7 @@ lines(spline(new$nofl,new$timing),lwd=4,col=3)##create nice splines
 ```
 Here are the graphs:
 <figure>
-  <img src="/resources/images/semitweak.png" alt="weak sliding routine" width="500" >
+    <img rel="zoom" src="/resources/images/semitweak.png" alt="weak sliding routine" width="500" >
   <figcaption><b>Fig. 1</b>.: Green: improved version; Red: old version.</figcaption>
 </figure> 
 
@@ -133,7 +133,7 @@ lines(spline(newnoflpred,newtimingpred),lty=2,lwd=4,col=3)##create nice splines
 ```
 And here are the extrapolated timings for 10,000 landmarks: 213.7 secs with the tweaked function and 3975.83 secs for the old function (more than **1 hour**).
 <figure>
-  <img src="/resources/images/semitweakExtra.png" alt="weak sliding routine" width="500" >
+    <img rel="zoom" src="/resources/images/semitweakExtra.png" alt="weak sliding routine" width="500" >
   <figcaption><b>Fig. 2</b>.: Extrapolation of computation time for 10,000 semi-landmarks. Green: improved version; Red: old version.</figcaption>
 </figure> 
 
