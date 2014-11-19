@@ -48,6 +48,6 @@ And here is the distance map to the inner vault (the error occurs only where the
 
 <figure>
     <img rel="zoom" src="/resources/images/endodist.png" alt="endodist" width="400">
-  <figcaption><b>Fig.3:</b>Distance between fitted endocast and cranial vault</figcaption>
+  <figcaption><b>Fig.1:</b> Distance between fitted endocast and cranial vault</figcaption>
 </figure>
 
