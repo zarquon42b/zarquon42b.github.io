@@ -8,6 +8,7 @@
     text-align:center;
     cursor:-webkit-zoom-out;
     cursor:-moz-zoom-out;
+    /*cursor: url(/resources/images/zoomout.gif), auto;*/
     z-index:999;
 }
 /* overlay covering website */
