@@ -21,6 +21,7 @@
 img[rel~="zoom"] {
     cursor:-webkit-zoom-in;
     cursor:-moz-zoom-in;
+     /*cursor: url(/resources/images/zoomin.gif), auto;*/
     display:block;
     margin-left: auto;
     margin-right: auto;
