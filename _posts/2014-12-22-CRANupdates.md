@@ -73,6 +73,6 @@ New versions of my R-packages [Rvcg 0.10.1](http://cran.r-project.org/web/packag
  * added option threshold in ```vcgIsosurface```
  * ```vcgIsosurface``` no longer binarizes the array values
  * fixed texture import in ```vcgImport```
- * fixed missing ```<#include time.h>``` in upstream code preventing windows build
+ * fixed missing ```#include <time.h>``` in upstream code preventing windows build
   
 Happy Holidays and a Happy New Year
