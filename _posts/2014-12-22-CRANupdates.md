@@ -13,19 +13,19 @@ New versions of my R-packages [Rvcg 0.10.1](http://cran.r-project.org/web/packag
 
 ####New features
 
- * ```slider3d```, ```relaxLM and ```procSym``` now allow minimizing Procrustes distance
+ * ```slider3d```, ```relaxLM``` and ```procSym``` now allow minimizing Procrustes distance
  * added orientation check in ```pcAlign``` to avoid reflections
  * massive speed improvements in sliding semi-landmarks routines
- * added options missing/missingList in ```relaxLM``` and ```slider3d``` to allow using semi-landmarks in "thin-air"
+ * added options ```missing```/```missingList``` in ```relaxLM``` and ```slider3d``` to allow using semi-landmarks in "thin-air"
  * added helper function ```createMissingList```
  * added function ```points2plane``` for projecting a point/pointcloud onto a plane.
  * ```pcAlign``` with argument ```y``` missing now centers a shape and aligns it by its principal axes.
  * added option ```pcAlign``` in ```procSym``` and ```ProcGPA``` to enable/disable alignment of sample by principal axes
- * added new function mirror to mirror a landmark configuration or a mesh and registering onto the original one.
+ * added new function ```mirror``` to mirror a landmark configuration or a mesh and registering onto the original one.
  * added new functions ```retroDeform3d``` and ```retroDeformMesh``` for removing affine deformation from a 3D-meshes and pointclouds
  * ```deformGrid3d``` now also accepts meshes
  * added function ```classify``` for ```CVA``` and ```groupPCA``` for creating classification tables
- * added new functions ```getTrafo4x4```, ```getTrafoRotaxis, ```computeTransform``` and ```applyTransform```, for computing and applying affine transformations.
+ * added new functions ```getTrafo4x4```, ```getTrafoRotaxis```, ```computeTransform``` and ```applyTransform```, for computing and applying affine transformations.
  * new function ```pcAlign``` to align meshes and pointclouds by their principal axes
  * added function ```meshPlaneIntersect``` to find intersection points between a mesh and a plane
  * added function ```getFaces``` to get indices of faces that contain specified vertices
@@ -73,6 +73,6 @@ New versions of my R-packages [Rvcg 0.10.1](http://cran.r-project.org/web/packag
  * added option threshold in ```vcgIsosurface```
  * ```vcgIsosurface``` no longer binarizes the array values
  * fixed texture import in ```vcgImport```
- * fixed missing <#include time.h> in upstream code preventing windows build
+ * fixed missing ```#include <time.h>``` in upstream code preventing windows build
   
 Happy Holidays and a Happy New Year
