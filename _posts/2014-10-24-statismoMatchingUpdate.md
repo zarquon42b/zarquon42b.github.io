@@ -94,7 +94,7 @@ similarity = list(iterations=10,rhotol=pi/2)
 affine = list(iterations=10,rhotol=pi/2)
 
 ### run the matching
-matchGP <- gaussMatch(Bayes,tar,lm1 = ref.lm,lm2=tar.lm,iterations = 50,sigma = 30,gamma=2,toldist = 30,angtol = pi/2,Bayes=Bayes,nh=100,visualize = T,similarity = similarity,affine = affine)
+matchGP <- gaussMatch(Bayes,tar,lm1 = ref.lm,lm2=tar.lm,iterations = 50,sigma = 30,gamma=2,toldist = 30,angtol = pi/2,nh=100,visualize = T,similarity = similarity,affine = affine)
 
 
 ```
