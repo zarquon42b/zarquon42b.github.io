@@ -20,7 +20,7 @@ This morning, I implemented two simple routines in my R-package [mesheR](https:/
 </figure> 
 **Fig. 1** shows a sample of mandibles (registered using ```gaussMatch``` with a GP-model created with [RvtkStatismo](https://github.com/zarquon42b/RvtkStatismo)). But maybe for some registration tasks I want to create a statistical model with only 10% the amount of faces (let's set it rather low to see the effect better). Assume we have saved the meshes in a list in ```R``` called ```matchlist```. Now we simply decimate the sample by calling ```decimateList(matchlist,percent=0.1)``` (you can also use all parameters from the workhorse function [vcgQEdecim](https://github.com/zarquon42b/Rvcg/blob/master/R/vcgQEdecim.r). </br>
 
-And here we go: **Fig. 2** shows the same surface but with less vertices and faces.
+And here we go: **Fig. 2** shows the same surfaces but with less vertices and faces.
 
 <figure>
     <img rel="zoom" src="/resources/images/meshlistDec.png" alt="origstate" width="400" >
