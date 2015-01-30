@@ -28,5 +28,5 @@ mymod <- statismoBuildModel(align,representer=align[,,1],scale=FALSE)
 rest <- restoreSamples(mymod)
 ```
 
-Now we could remesh this sample and create a new statismo model
+Now we could remesh this sample and create a new statismo model. </br>
 Have a nice weekend!
