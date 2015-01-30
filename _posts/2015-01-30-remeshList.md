@@ -27,4 +27,4 @@ And here we go: **Fig. 2** shows the same surface but with less vertices and fac
   <figcaption><b>Fig. 1:</b> The same mandibles now reduced to 6262 faces.</figcaption>
 </figure> 
 
-Now we could create coarse statistical model from those.You can also do a complete remeshing using the function ```remeshList``` wrapping the remeshing function [vcgUniformRemesh](https://github.com/zarquon42b/Rvcg/blob/master/R/vcgUniformRemesh.r).
+Now we could for example create a coarser statistical model from those.You can also do a complete remeshing using the function ```remeshList``` wrapping the remeshing function [vcgUniformRemesh](https://github.com/zarquon42b/Rvcg/blob/master/R/vcgUniformRemesh.r).
