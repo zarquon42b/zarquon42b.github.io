@@ -13,6 +13,7 @@ As a follow up of my earlier post, one might want to change an existing shape mo
 Assume you have stored a statismo shape model (using a mesh representer) in the local file *mymod.h5*, to restore the shapes, the commands in **R** are simply:
 
 ```r
+require(RvtkStatismo)
 mymod <- statismoLoadModel("mymod.h5")
 
 ## or (in case you do not have one and want to test the code,
@@ -27,4 +28,5 @@ mymod <- statismoBuildModel(align,representer=align[,,1],scale=FALSE)
 rest <- restoreSamples(mymod)
 ```
 
+Now we could remesh this sample and create a new statismo model
 Have a nice weekend!
