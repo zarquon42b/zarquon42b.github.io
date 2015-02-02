@@ -6,7 +6,7 @@ tags:
 - RvtkStatismo
 
 date: 2015-02-02 13:50:00 +0200
-title: Howto - remesh a statismo shape model with RvtkStatismo
+title: Howto&#58; Remesh a statismo shape model with RvtkStatismo
 ---
 
 
