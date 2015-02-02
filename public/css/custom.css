@@ -38,10 +38,11 @@ figure {
 
 .left {
     float: left;
-    margin: 0px  25px  15px  0px;
+    margin: 0px  25px  15px  10px;
 }
 .right {
     float: right;
+    margin: 10px  25px  15px  0px;
 }
 .center {
     align: center;
