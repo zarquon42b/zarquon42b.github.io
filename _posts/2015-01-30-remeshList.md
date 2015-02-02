@@ -8,7 +8,7 @@ date: 2015-01-30 13:40:00 +0200
 title: Remesh or decimate a set of registered meshes, while preserving correspondences
 
 ---
-This morning, I implemented two simple routines in my R-package [mesheR](https://github.com/zarquon42b/RvtkStatismo), that allow to remesh or decimate a set of registered meshes (i.e. with all vertices in pseudo-homologous positions). The procedure is quite simple: select a reference from the sample and apply the decimation/remeshing. Then get the barycentric coordinates of the new vertex positions on the original mesh. These in turn can then be used to extract the corresponding vertex positions of the mesh on all the sample - as the mesh structure is identical throughout the sample.
+This morning, I implemented two simple routines in my R-package [mesheR](https://github.com/zarquon42b/mesheR), that allow to remesh or decimate a set of registered meshes (i.e. with all vertices in pseudo-homologous positions). The procedure is quite simple: select a reference from the sample and apply the decimation/remeshing. Then get the barycentric coordinates of the new vertex positions on the original mesh. These in turn can then be used to extract the corresponding vertex positions of the mesh on all the sample - as the mesh structure is identical throughout the sample.
 
 ####NOTE: The meshes do not have to be prealigned.
 

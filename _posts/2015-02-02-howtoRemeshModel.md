@@ -6,11 +6,11 @@ tags:
 - RvtkStatismo
 
 date: 2015-02-02 13:50:00 +0200
-title: Howto&#58; Remesh a statismo shape model with RvtkStatismo
+title: Howto&#58; Remesh a statismo shape model with RvtkStatismo and mesheR
 ---
 
 
-To put some flesh onto my [earlier posts](/2015/01/30/remeshList/), I added an example shape model to RvtkStatismo's example data. And here is some working code to generate shape models with different mesh resolutions from an existing shape model. <figure class="right">
+To put some flesh onto my [earlier posts](/2015/01/30/remeshList/), I added an example shape model to RvtkStatismo's example data. And here is some working code to generate shape models with different mesh resolutions from an existing shape model (using [RvtkStatismo](https://github.com/zarquon42b/RvtkStatismo) and [mesheR](https://github.com/zarquon42b/mesheR)). <figure class="right">
     <img rel="zoom" src="/resources/images/decimod1.png" alt="origstate" width="300" >
  <figcaption>Mean shapes of models created from meshes only differing in mesh resolution.</figcaption>
 </figure> 
