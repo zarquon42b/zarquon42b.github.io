@@ -9,7 +9,7 @@ date: 2015-04-05 13:50:00 +0200
 title: Create a nicely colored easter egg with Morpho
 ---
     
-On Friday, I added the option rampcolors to the function ```meshDist``` in ```Morpho``` to allow defining custom colorramps.
+On Friday, I added the option ```rampcolors``` to the function ```meshDist``` in [Morpho](https://github.com/zarquon42b/Morpho) to allow defining custom colorramps.
 
 Now we use this to create a nice easteregg:
 
@@ -29,7 +29,7 @@ meshDist(egg,zero,sign=F,steps=50,rampcolors = rainbow(6))
  <figcaption>Easter egg colored with function meshDist.</figcaption>
 </figure>
     
-Happy easter holidays
+Happy easter holidays!
 
 
 
