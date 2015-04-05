@@ -27,7 +27,7 @@ mD <- meshDist(egg,zero,sign=F,steps=50,rampcolors = rainbow(6))
 
 ###here is a striped version
 
-render(mD,steps=60,rampcolors = rep(c("red","orange","green"),4))
+render(mD,steps=60,rampcolors = rep(c("red","orange","green"),10))
 
 ```
 <figure class="center">
