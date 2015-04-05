@@ -6,7 +6,7 @@ tags:
 
 
 date: 2015-04-05 13:50:00 +0200
-title: Create a nicely colored easter eggs with Morpho
+title: Create nicely colored easter eggs with Morpho
 ---
     
 On Friday, I added the option ```rampcolors``` to the function ```meshDist``` in [Morpho](https://github.com/zarquon42b/Morpho) to allow defining custom colorramps and adapted the function ```render``` to conveniently adapt the ramps, without recomputing distances.
