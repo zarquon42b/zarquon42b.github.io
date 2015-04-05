@@ -33,8 +33,9 @@ render(mD,steps=60,rampcolors = rep(c("red","orange","green"),4))
 <figure class="center">
  <img rel="zoom" src="/resources/images/easteregg.png" alt="origstate" width="300" >
  <figcaption>Easter egg colored with function meshDist.</figcaption>
-</figure>
-
+     </figure>
+    
+    
     <figure class="center">
  <img rel="zoom" src="/resources/images/easterstriped.png" alt="origstate" width="300" >
  <figcaption>Striped version.</figcaption>
