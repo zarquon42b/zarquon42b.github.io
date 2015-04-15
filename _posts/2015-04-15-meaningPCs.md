@@ -10,6 +10,9 @@ title: Morpho&#58; Determine meaningful Principal Components
 extensions: [with_toc_data]
 ---
 
+As this is a somewhat longish post, here a table of content:
+
+
 * [Background](#background)
 * [Implementation](#implementation)
 * [Examples](#examples)
