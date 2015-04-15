@@ -5,13 +5,18 @@ tags:
 - statismo
 - RvtkStatismo
 
-date: 2012-04-15 13:50:00 +0200
+date: 2015-04-15 15:50:00 +0200
 title: Morpho&#58; Determine meaningful Principal Components
+extensions: [with_toc_data]
 ---
-* This will become a table of contents (this text will be scraped).
-{:toc}
 
-#Background
+* [Background](#background)
+* [Implementation](#implementation)
+* [Examples](#examples)
+* [References](#references)
+
+<a id="background"></a>
+###Background
 Some time ago, I attended a talk of Fred Bookstein about sheding meaningful PCs (eigenvectors of the covariance matrix) from those rather representing spherical noise. In this context *"meaningful"* means that the direction of the PC is distinctive. When reading biological/anthropological papers, one often finds detailed descriptions/analyses of shape changes associated with single PCs. This, however, presumes that these PCs have a mathematical meaning as distinctive axes of the ellipsoid representing the sample's distribution. But what if the ellipsoid is rather a glorified sphere than a *"real"* ellipsoid? Then all analyses/interpretations based on single PCs are simply nonsensical.
 
 This week, I got hold of a copy of *Measuring and and reasoning* by said [Bookstein (2014)](#1), where the details (page 324f.) of the above mentioned talks are explained: The basic approach is based on a log-likelihood ratio. Without getting into the details, here is the shorthand version (also see [Mardia et. al (1979; p. 235)](#2) for further theoretical details):
@@ -21,9 +26,12 @@ Be \\(a\\) the arithmetic mean of two eigenvalues and \\(g\\) their geometric me
 Enough theory, here are some examples, first we determine the ratios, depending on sample size, to attribute meaning to a PC, and then we compare it to the ratio necessary to consider the difference statistically significant. 
 
 
+<a id="implementation"></a>
 ###Implementation
 I implemented the method in the functions ```getMeaningfulPCs``` and ```getPCtol```, with the latter calculating the ratio threshold given a specific sample size and expected value.
 
+<a id="examples"></a>
+###Examples
 ```r
 #get development snapshot of Morpho
 require(devtools)
@@ -90,6 +98,8 @@ data(boneData)
     <img rel="zoom" src="/resources/images/meaningPCbarplot.png" alt="weak sliding routine" width="500" >
   <figcaption><b>Fig. 2</b>.: Variance explained by each PC</figcaption>
 </figure> 
+
+<a id ="references"></a>
 
 ###References
 
