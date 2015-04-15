@@ -99,7 +99,7 @@ data(boneData)
 ```
 <figure>
     <img rel="zoom" src="/resources/images/meaningPCbarplot.png" alt="weak sliding routine" width="500" >
-  <figcaption><b>Fig. 2</b>.: Variance explained by each PC</figcaption>
+  <figcaption><b>Fig. 2</b>.: Eigenvalues for each PC</figcaption>
 </figure> 
 
 <a id ="references"></a>
