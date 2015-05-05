@@ -23,6 +23,16 @@ Here is an example, how to use it:
 ### Create some competing points and test the function
 
 ```r
+require(RvtkStatismo)
+require(Morpho)
+require(mesheR)
+require(Rvcg)
+require(rgl)
+mod <- statismoLoadModel(system.file("extdata","mandibles.h5",package="RvtkStatismo"))
+mysample <- DrawSample(mod,c(0.215, -0.777, -0.861, -1.871, 1.597, 0.882, -1.225, -0.072, -0.498, 0.094, -0.666, -0.837, -0.145, 0.654))
+
+randomint <- data.frame(sample=sample(1:ncol(mysample$vb),replace=T,size=500))
+
 ##get vertices
 mysampleverts <- mysamplenoisy <- vert2points(mysample)
 ## create noisy duplicates of our existing vertices
