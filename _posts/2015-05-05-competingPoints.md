@@ -10,7 +10,7 @@ title: RvtkStatismo&#58; Select from competing points using a statistical model
 ---
 
 
-By request of a user I added the function ```competingPoints to RvtkStatismo, to select from a set of competing points, those with the lowest Mahalanobis distance calculated from a statistical model ([Fig 1](#Fig1)). 
+By request of a user I added the function ```competingPoints``` to RvtkStatismo, to select from a set of competing points, those with the lowest Mahalanobis distance calculated from a statistical model ([Fig 1](#Fig1)). 
 <a id="Fig1"></a>
 <figure class="center">
     <img rel="zoom" src="/resources/images/somenoise.png" alt="origstate" width="450" >
