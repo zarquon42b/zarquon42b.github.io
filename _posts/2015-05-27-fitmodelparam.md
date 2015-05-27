@@ -9,7 +9,7 @@ date: 2015-05-27 15:25:00 +0200
 title: mesheR and RvtkStatismo&#58; added new shape model fitting algorithm
 ---
 
-I implemented another function, called ```modelFitting``` (["where to they always get these crazy names"](https://www.youtube.com/watch?v=04JTrqsLvG8=)), into [mesheR](https://github.com/zarquon42b/mesheR) to fit a statismo shape model to a target mesh. Other than the functions ```gaussMatch``` and ```AmbergRegister```, here the model is not only used to regularize a free form deformation, but a (symmetric) mean squared distance between (iteratively updated closest points of) both meshes is minimized using an [lbfgs](http://cran.r-project.org/web/packages/lbfgs/) optimizer.
+I implemented another function, called ```modelFitting``` (["where do they get these crazy names"](https://www.youtube.com/watch?v=04JTrqsLvG8=)), into [mesheR](https://github.com/zarquon42b/mesheR) to fit a statismo shape model to a target mesh. Other than the functions ```gaussMatch``` and ```AmbergRegister```, here the model is not only used to regularize a free form deformation, but a (symmetric) mean squared distance between (iteratively updated closest points of) both meshes is minimized using an [lbfgs](http://cran.r-project.org/web/packages/lbfgs/) optimizer.
 
 Below are two examples (once again using Marcel's femurs), one using landmarks to constrain a model and one where the target is initially registered to the model using a similarity and affine ICP.
 
