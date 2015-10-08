@@ -55,3 +55,8 @@ table figure {
     margin: 10px auto; /* not needed unless you want centered */
     font-size:0.8em;
 }
+
+figcaption {
+    text-align: center;
+    font-size:0.8em;
+}
