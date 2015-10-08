@@ -9,7 +9,7 @@ date: 2015-10-08 15:45:00 +0200
 title: RvtkStatismo&#58; Updates
 ---
 
-Newly motivated by the nice [SHAPE symposium](http://www.shapesymposium.org/) in Delemont, I started showing some love to RvtkStatismo: ```statismoConstrainModel``` now accepts per coordinate noise values (only spherical at the moment). Additionally, there is a new function called ```vtkTriangulate``` that creates an isosurface (as ```mesh3d```)from a (binary) image file and ```vtkMeshWrite``` can optionally write ASCII vtk files. All this is accompanied by some bugfixes I found on the way.
+Newly motivated by the nice [SHAPE symposium](http://www.shapesymposium.org/) in Delemont, I started showing some love to RvtkStatismo: ```statismoConstrainModel``` now accepts per coordinate noise values (only spherical at the moment). Additionally, there is a new function called ```vtkTriangulate``` that creates an isosurface (as ```mesh3d```)from a (binary) image file and ```vtkMeshWrite``` can optionally write ASCII vtk files. All this is accompanied by some bugfixes I found along the way.
 
 Here are the effects of per-landmark noise and global noise values:
 
