@@ -13,7 +13,7 @@ Newly motivated by the nice [SHAPE symposium](http://www.shapesymposium.org/) in
 
 ##Example
 
-Here is an example of the effects, when assigning landmark specific noise values when constraining a model:
+Here is an example of the effects, when assigning landmark specific noise values to constrain a model:
 
 
 ```r
