@@ -33,7 +33,7 @@ movingLM <- read.fcsv("movingLM.fcsv")
 rigidInit <- landmarkTransform(fixLM,movingLM,type = "rigid")
 
 ## show initial state and landmarks
-wire3d(vcgSmooth(isosurface(movinimage,threshold=1),type="HC",iteration=4),col=3)
+wire3d(vcgSmooth(isosurface(movingimage,threshold=1),type="HC",iteration=4),col=3)
 wire3d(vcgSmooth(isosurface(fiximage,threshold=1),type="HC",iteration=4),col=5)
 spheres3d(fixLM,col=1,radius = 3)
 spheres3d(movingLM,col=2,radius = 3)
