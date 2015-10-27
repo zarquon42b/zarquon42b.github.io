@@ -9,7 +9,7 @@ date: 2015-10-23 15:45:00 +0200
 title: RANTs&#58; How to compute an initial landmark transform to pass to ANTsR
 ---
 
-In most cases, the initial alignment of (3D) images is problematic and having some landmarks can aid greatly in finding a suitable initial transform. After, once again, struggling with image and point spaces, I came up with a function ([```RANTs::landmarkTransform```](https://github.com/zarquon42b/RANTs/blob/master/R/getAffine.r#L39) <- click me), that allows to calculate an initial transform from landmarks (rigid, similarity or affine and save that in ITK's mat format. 
+In most cases, the initial alignment of (3D) images is problematic and having some landmarks can aid greatly in finding a suitable initial transform. After, once again, struggling with image and point spaces, I came up with a function ([```RANTs::landmarkTransform```](https://github.com/zarquon42b/RANTs/blob/421f5cdf59323ef5a7d782fbd42ac31e573b1a15/R/landmarkTransform.R#L16) <- click me), that allows to calculate an initial transform from landmarks (rigid, similarity or affine and save that in ITK's mat format. 
 When running [ANTsR](https://github.com/stnava/ANTsR) subsequently, we can then provide this transform.
 
 Here is an example (two binary images with 4 landmarks on each placed with Slicer) of an ANTs rigid registration preceded by an initial landmark transform. All automatic intializations failed because the regions of the images differ greatly (the moving image is only the skull while the fix image is skull + upper part of the rip cage). 
