@@ -37,7 +37,6 @@ ci$SetOutputPixelType("sitkFloat32")
 image1 <- ci$Execute(movingimage)
 image2 <- ci$Execute(fixedimage)
 
-
 ##set up elastix
 elastix <- SimpleElastix()
 elastix <- elastix$SetFixedImage(image2)
@@ -105,7 +104,6 @@ def statismoElastix(fixedimage, movingimage,  model, meshname,outdir="",para_fil
     elastix.Execute()
     trafopara = outdir + "/TransformParameters.0.txt"
     
-
     # call transformix
     # sitk.WriteImage(elastix.GetResultImage(),"test.nii.gz")
     call(["transformix","-tp", trafopara,"-out", outdir,"-def", meshname])
@@ -115,7 +113,7 @@ def statismoElastix(fixedimage, movingimage,  model, meshname,outdir="",para_fil
 
 ```
 
-### R Wrapper
+### R Wrapper:
 
 ```r
 require(Morpho);require(RvtkStatismo);require(rPython)
