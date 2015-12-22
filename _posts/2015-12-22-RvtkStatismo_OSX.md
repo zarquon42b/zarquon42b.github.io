@@ -36,5 +36,7 @@ Fire up R and run
     devtools::install_github("zarquon42b/RvtkStatismo")
 ```
 
+**CAVEAT** RvtkStatismo works when running R in terminal or Rstudio IDE but **not** using R.app.
+
 Happy holidays.
  
