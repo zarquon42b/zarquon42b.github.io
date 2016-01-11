@@ -21,22 +21,54 @@ Install R and XCODE, run the following lines in your terminal:
  make ## make a coffee or go for lunch
  ```
 
-Here comes the dirty part (people familiar with both R and OSX might want to show me the light please, as setting DYLD\_LIBRARY\_PATH did not make R find the libs):
-Copy the libs to where R can find them:
+There are two ways to tell R, where the libraries reside:
 
-```bash
- cp INSTALL/lib/libvtk* INSTALL/lib/libboost* INSTALL/lib/libhdf5* /Library/Frameworks/R.framework/Resources/lib
- 
-``` 
+1. Dirty solution. Copy the libs to where R can find them:
+
+    ```bash
+    cp INSTALL/lib/libvtk* INSTALL/lib/libboost* INSTALL/lib/libhdf5* /Library/Frameworks/R.framework/Resources/lib
+     
+    ```
+
+2. In OS X Yosemite there seems no way to set the environment variable ```DYLD_LIBRARY_PATH```  globally, so we create a file [~/Library/LaunchAgents/statismo.plist](/resources/statismo.plist) containing the following (of course replacing the path with yours):
+
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+    <plist version="1.0">
+    <dict>
+      <key>Label</key>
+      <string>my.startup</string>
+      <key>ProgramArguments</key>
+      <array>
+        <string>sh</string>
+        <string>-c</string>
+        <string>
+        launchctl setenv DYLD_LIBRARY_PATH /Users/myuser/statismo/build/INSTALL/lib
+       </string>
+    
+      </array>
+      <key>RunAtLoad</key>
+      <true/>
+    </dict>
+    </plist>
+    ```
+    Now logout and login again.
+
+    To use RvtkStatismo in a console you need to run (works for one session only):
+
+    ```
+    export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/Users/myuser/statismo/build/INSTALL/lib
+    ```
+
 
 Fire up R and run 
 
 ```r
     install.packages("devtools")
-    devtools::install_github("zarquon42b/RvtkStatismo")
+    devtools::install_github("zarquon42b/RvtkStatismo",args="--configure-args='path_to_superbuild/Statismo-build'")
 ```
 
-**CAVEAT** RvtkStatismo works when running R in terminal or Rstudio IDE but **not** using R.app.
 
 Happy holidays.
  
