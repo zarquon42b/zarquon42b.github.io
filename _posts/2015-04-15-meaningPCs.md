@@ -19,7 +19,9 @@ As this is a somewhat longish post, here a table of content:
 * [References](#references)
 
 <a id="background"></a>
-###Background
+
+### Background
+
 Some time ago, I attended a talk of Fred Bookstein about separating meaningful PCs (eigenvectors of the covariance matrix) from those rather representing spherical noise. In this context *"meaningful"* means that the direction of the PC is distinctive. When reading biological/anthropological papers, one often finds detailed descriptions/analyses of shape changes associated with single PCs. This, however, presumes that these PCs have a mathematical meaning as distinctive axes of the ellipsoid representing the sample's distribution. But what if the ellipsoid is rather a glorified sphere than a *"real"* ellipsoid? Then all analyses/interpretations based on single PCs are simply nonsensical.
 
 This week, I got hold of a copy of *Measuring and and reasoning* by said [Bookstein (2014)](#1), where the details (page 324f.) of the above mentioned talks are explained: The basic approach is based on a log-likelihood ratio. Without getting into the details, here is the shorthand version (also see [Mardia et. al (1979; p. 235)](#2) for further theoretical details):
@@ -30,11 +32,15 @@ Enough theory, here are some examples, first we determine the ratios, depending 
 
 
 <a id="implementation"></a>
-###Implementation
+
+### Implementation
+
 I implemented the method in the functions ```getMeaningfulPCs``` and ```getPCtol```, with the latter calculating the ratio threshold given a specific sample size and expected value.
 
 <a id="examples"></a>
-###Examples
+
+### Examples
+
 ```r
 #get development snapshot of Morpho
 require(devtools)
@@ -104,7 +110,7 @@ data(boneData)
 
 <a id ="references"></a>
 
-###References
+### References
 
 <a id="1">[1]</a> Bookstein, F. L. Measuring and reasoning: numerical inference in the sciences. Cambridge University Press, 2014
 

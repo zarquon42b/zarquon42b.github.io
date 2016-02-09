@@ -14,7 +14,8 @@ While ```vcgIsosurface``` is available for some time now in Rvcg, I tweaked it t
 Here are two examples (one for ANTsR and one for SimpleITK) how to create an isosurface from a segmentation (the result combined with the image can be seen in [Figure 1](#Fig1).)
 
 
-###ANTsR
+### ANTsR
+
 ```r
 require(ANTsR)
 require(Rvcg)
@@ -39,7 +40,8 @@ vcgPlyWrite(surfAnts)
 
 ```
 
-###SimpleITK
+
+### SimpleITK
 The example for SimpleITK is pretty much the same, the main differences is that we have to transform the direction vector into matrix ourselves:
 
 ```r

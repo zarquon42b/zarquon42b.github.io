@@ -13,7 +13,7 @@ title: New Releases of Rvcg and Morpho&#58; performance improvements and bugfixe
 Somewhat delayed here the announcement of new CRAN releases of **[Rvcg](https://cran.r-project.org/package=Rvcg)** and **[Morpho](https://cran.r-project.org/package=Morpho)**: 
 The most significant changes are the optional usage of OpenMP for closest point search/KD-tree search in Rvcg (functions ```vcgClostKD``` and ```vcgKDtree``` now have an option ```threads``` to specify number of threads to use). This is significantly boosting the registration functions ```gaussMatch```,```modelFitting``` and  ```AmbergRegister``` from **[mesheR](https://github.com/zarquon42b/mesheR)** where this function is called several times in each iteration.
 
-###Here are all changes in Rvcg:
+### Here are all changes in Rvcg:
 
  * updated vcglib source code to Revision: 5542
  * added functions to create basic meshes (spheres, polyhedrons)
@@ -24,7 +24,7 @@ The most significant changes are the optional usage of OpenMP for closest point 
  * added functions to check if the normals of a mesh are oriented outward
  * added additional low-level options in vcgKDtree
 
-###And here the changes in Morpho:
+### And here the changes in Morpho:
 
  * meshPlaneIntersect now also supports normals (as cutSpace)
  * added default method for applyTransform for 2D and 3D vectors

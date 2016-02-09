@@ -15,8 +15,8 @@ By request of a user I added the function ```competingPoints``` to RvtkStatismo,
 <figure class="center">
     <img rel="zoom" src="/resources/images/somenoise.png" alt="origstate" width="450" >
  <figcaption>Fig. 1: Different coordinates competing for a given vertex position.</figcaption>
-</figure> 
-</br>
+</figure> <br> 
+
 
 Here is an example, how to use it:
  

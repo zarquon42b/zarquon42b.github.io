@@ -12,10 +12,11 @@ title: New CRAN-Releases of Morpho and Rvcg
 
 Within the last weeks, I finally managed to update my official R-packages Morpho and Rvcg on CRAN.
 
-##The changes are: 
-###Changes in Morpho version 2.3.0 (2015-06-18)
+## The changes are: 
 
-####New features
+### Changes in Morpho version 2.3.0 (2015-06-18)
+
+#### New features
 
 * added function ```line2plane``` to calculate intersection of a line and a plane
 * added option ```pcAlign``` in function mirror to improve alignment to original object
@@ -33,7 +34,7 @@ Within the last weeks, I finally managed to update my official R-packages Morpho
 * added ```getMeaningfulPCs``` to determine meaningful Principal Components (see my post [here](/2015/04/15/meaningPCs/))
 * made optimization in ```pcAlign``` and ```mirror``` run in parallel (not supported on Windows OS).
 
-####bugfixes and minor changes
+#### bugfixes and minor changes
 
 * fixed normal handling in``` mergeMeshes```
 * fixed coefficient scaling in ```RegScore```
@@ -45,12 +46,13 @@ Within the last weeks, I finally managed to update my official R-packages Morpho
 
 
 
-###Changes in Rvcg version 0.12.2 (2015-06-28)
-####new features
+### Changes in Rvcg version 0.12.2 (2015-06-28)
+
+#### new features
  * updated vcglib source code to Revision: 5521
  * added option ```as.int``` to ```vcgIsosurface```
  * added option ```iterate``` in ```vcgClean```
  
-####bug fixes
+#### bug fixes
  * removed wrong error call in ```vcgKDtree```
  * silenced all output in ```vcgQEdecim``` if ```silent=TRUE```
