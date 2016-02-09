@@ -40,7 +40,7 @@ cmod <- statismoConstrainModel(mymod,tar.lm,ref.lm,2)
 cmodS <- statismoConstrainModel(mymodScale,tar.lm,ref.lm,2)
 ```
 
-###Here are the results (*green*=reference/constrained model mean):
+### Here are the results (*green*=reference/constrained model mean):
 <figure>
     <img rel="zoom" src="/resources/images/origstate.png" alt="origstate" width="400" >
   <figcaption><b>Fig. 1:</b> Original state with landmarks.</figcaption>

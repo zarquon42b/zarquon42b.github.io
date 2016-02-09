@@ -75,4 +75,4 @@ vcgPlyWrite(surfSitk)
     <img rel="zoom" src="/resources/images/slicer.png" alt="slicer" width="450" >
  <figcaption>Fig. 1: Surface representation and original (unsegmented) image in Slicer.</figcaption>
 </figure> 
-</br>
+<br>

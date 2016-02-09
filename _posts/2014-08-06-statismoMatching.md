@@ -13,7 +13,7 @@ I finally found some time to properly implement statismo models into the surface
 
 Here is an example how to do this:
 
-###CAVEAT:
+### CAVEAT:
 <font color="#FF0000"><b>You need to install latest version from master branch of mesheR, RvtkStatismo and Morpho !!</b>
 </font>
 
@@ -106,7 +106,7 @@ deformGrid3d(matchGP,ref,size=0.1,type="p")
 ```
   <img rel="zoom" src="/resources/images/fig4.png"  style="width: 550px">
 
-###EDIT: 
+### EDIT: 
 I just realized, that we actually do not need smoothing (to prevent mesh-folding) if we use statistical models because the model carries us pretty close to a valid target shape:
 
 ```r

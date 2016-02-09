@@ -30,7 +30,7 @@ test <- gaussMatch(Bayes,skull,toldist = 200,visualize = T,oneway = T,angtol=pi/
 <video width="420" height="315" controls> <source src="/resources/videos/endo.webm" frameborder="0" allowfullscreen> </video>
 </center>
 
-</br>
+<br>
 For the fine matching, we remesh the result ( I used the remeshing VCG filter in meshlab and saved it as *testVCG.ply*) to create a relatively uniform version of the fitted endocast.
 
 

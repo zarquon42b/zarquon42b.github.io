@@ -55,7 +55,7 @@ wire3d(ccmesh,col="red")
     <img rel="zoom" src="/resources/images/spikes.png" alt="origstate" width="450" >
  <figcaption>Fig. 2: Some selections are suboptimal.</figcaption>
 </figure> 
-</br>
+<br>
 
 As we can see from [Fig 2](#Fig2), some selection seem to have gone wrong, but actually, the "spikes" are exhibiting a lower mahalanobisdistance (when only viewed on an isolated point level):
 
@@ -85,4 +85,4 @@ The final result using the projection into modelspace looks like this (which is 
     <img rel="zoom" src="/resources/images/finalPredictCompete.png" alt="origstate" width="450" >
  <figcaption>Fig. 3: The selection projected into model space.</figcaption>
 </figure> 
-</br>
+<br>

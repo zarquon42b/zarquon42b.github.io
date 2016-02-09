@@ -48,4 +48,4 @@ In <a href="#Fig1"> Figure 1 and Figure 2</a> we can see how the variability of 
 </figure>   
  <figcaption>Fig. 1: noise specific variability of landmarks in posterior model</figcaption>
 
-</br>
+<br>

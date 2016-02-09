@@ -141,8 +141,8 @@ Here is the result: Only bone tissue, no clutter and the vertebrae separate from
 </figure>
 
 
-</br></br>
-</br>
+<br><br>
+<br>
 
 
 ##Interoperability with ANTsR

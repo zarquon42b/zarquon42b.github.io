@@ -9,9 +9,9 @@ title: Updates&#58; Rvcg 0.10.1 and Morpho 2.2 on CRAN
 ---
 New versions of my R-packages [Rvcg 0.10.1](http://cran.r-project.org/web/packages/Rvcg/) and [Morpho 2.2](http://cran.r-project.org/web/packages/Morpho/) are now available on [CRAN](http://cran.r-project.org/).
 
-###Changes in Morpho since 2.0.3:
+### Changes in Morpho since 2.0.3:
 
-####New features
+#### New features
 
  * ```slider3d```, ```relaxLM``` and ```procSym``` now allow minimizing Procrustes distance
  * added orientation check in ```pcAlign``` to avoid reflections
@@ -30,7 +30,7 @@ New versions of my R-packages [Rvcg 0.10.1](http://cran.r-project.org/web/packag
  * added function ```meshPlaneIntersect``` to find intersection points between a mesh and a plane
  * added function ```getFaces``` to get indices of faces that contain specified vertices
 
-####bugfixes and minor changes
+#### bugfixes and minor changes
 
  * fixed issue with argument sep in ```typprobClass```
  * added option size in ```deformGrid3d```
@@ -53,7 +53,7 @@ New versions of my R-packages [Rvcg 0.10.1](http://cran.r-project.org/web/packag
 
  
 
-###Changes in Rvcg since 0.9: 
+### Changes in Rvcg since 0.9: 
  
  * pulled new upstream code
  * patched some memory leaks in upstream code

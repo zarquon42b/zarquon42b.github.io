@@ -83,7 +83,7 @@ Hereby, the timing for 4000 semi-landmarks was 507.6 secs for the old version, c
 
 **FUN FACTS:** using ATLAS and testing for 10,000 semi-landmarks with the tweaked function, I managed to max out all 32GB RAM (yay, first time on this machine). Using [OpenBLAS](https://github.com/xianyi/OpenBLAS), it only took 160 seconds (awesome!) and required *only* 20 GB RAM (don't try this on your fancy tablets).
 
-##EXTRA FUN:
+## EXTRA FUN:
 
 Now as a special gimmic, we calculate 2nd order polynomial approximations with number of landmarks as predictor in order to predict the timings for 10,000 semi-landmarks.
 
@@ -107,7 +107,7 @@ pred4000new <- sum(newmod1$coefficients*c(1,4000,4000^2))# 29.31068 reasonably c
 oldmod <- lm(old$timing ~ old$nofl+I(new$nofl^2))
 newmod <- lm(new$timing ~ new$nofl+I(new$nofl^2))
 
-##extrapolate from data
+## extrapolate from data
 
 pred10000old <- sum(oldmod$coefficients*c(1,10000,10000^2))
 pred10000new <- sum(newmod$coefficients*c(1,10000,10000^2))

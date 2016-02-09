@@ -10,11 +10,12 @@ title: Howto&#58; Remesh a statismo shape model with RvtkStatismo and mesheR
 ---
 
 
-To put some flesh onto my [earlier posts](/2015/01/30/remeshList/), I added an example shape model to RvtkStatismo's example data. And here is some working code to generate shape models with different mesh resolutions from an existing shape model (using [RvtkStatismo](https://github.com/zarquon42b/RvtkStatismo) and [mesheR](https://github.com/zarquon42b/mesheR)). <figure class="right">
+To put some flesh onto my [earlier posts](/2015/01/30/remeshList/), I added an example shape model to RvtkStatismo's example data. And here is some working code to generate shape models with different mesh resolutions from an existing shape model (using [RvtkStatismo](https://github.com/zarquon42b/RvtkStatismo) and [mesheR](https://github.com/zarquon42b/mesheR)). 
+<figure class="right">
     <img rel="zoom" src="/resources/images/decimod1.png" alt="origstate" width="300" >
  <figcaption>Mean shapes of models created from meshes only differing in mesh resolution.</figcaption>
 </figure> 
-</br>Below, you find the code to 
+<br>Below, you find the code to 
  
  * restore shapes from a model
  * remesh/decimate the data based on the model mean
@@ -43,7 +44,9 @@ Bayes <- createBayes(mod,sdmax = rep(5,100),align = F)
 match <- gaussMatch(Bayes,sampleShape,iterations = 5,visualize = T,angtol = pi/2)
 
 ```
-####Matching the original model onto a random instance from the decimated one
+
+#### Matching the original model onto a random instance from the decimated one
+
 <center>
 <video width="420" height="315" controls> <source src="/resources/videos/decimod.webm" frameborder="0" allowfullscreen> </video>
 </center>
@@ -69,7 +72,7 @@ matchRe <- gaussMatch(BayesRemesh,sampleShapeOrig,iterations = 5,visualize = T,a
 
 ```
 
-####Matching the remeshed model onto a random instance from the original one
+#### Matching the remeshed model onto a random instance from the original one
 <center>
 <video width="420" height="315" controls> <source src="/resources/videos/remesh.webm" frameborder="0" allowfullscreen> </video>
 </center>

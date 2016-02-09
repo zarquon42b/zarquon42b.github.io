@@ -14,7 +14,7 @@ So, I implemented it and tested a bit and found out that it may lead to odd dist
 Here are the tests (you will need to install "fastslide" branch from [GitHub](https://github.com/zarquon42b/Morpho/tree/fastslide)):
 <figure>
    <img rel="zoom" src="/resources/images/orig.png" alt="bending" width="250" >
-  <figcaption"><b>Fig. 1: </b>Red: semi-landmarks displaying a nose. Black: semi-landmarks displaying a grotesquely long nose.</figcaption>
+  <figcaption><b>Fig. 1: </b>Red: semi-landmarks displaying a nose. Black: semi-landmarks displaying a grotesquely long nose.</figcaption>
 </figure> 
 
 
