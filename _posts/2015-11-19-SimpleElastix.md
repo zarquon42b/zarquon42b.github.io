@@ -17,9 +17,10 @@ Here is how to get things up and running in R:
 
 1. Get SimpleElastix as described here: [http://simpleelastix.readthedocs.org/GettingStarted.html](http://simpleelastix.readthedocs.org/GettingStarted.html)
 2. Do the Superbuild
-3. Get statismo-elastix (fixed for statismo 0.11 from [my fork](https://github.com/zarquon42b/statismo-elastix) and rebuild the elastix component pointing to the statismo-elastix component directory.
-4. rebuild SimpleElastix (as we updated elastix)
-5. Go to SimpleElastix-build/Wrapping/Rpackaging and run ```R CMD INSTALL SimpleITK```
+3. Build and install [development branch of statismo](https://github.com/statismo/statismo/tree/develop).
+4. Get statismo-elastix (fixed for statismo 0.11 from [my fork](https://github.com/zarquon42b/statismo-elastix) and rebuild the elastix component pointing to the statismo-elastix component directory.
+5. rebuild SimpleElastix (as we updated elastix)
+6. Go to SimpleElastix-build/Wrapping/Rpackaging and run ```R CMD INSTALL SimpleITK```
 
 
 And here is an example, assuming you have a deformation model called *defmod.h5* (created with statismo-build-deformation-model), a fixed model in the domain of the deformation model called *template.nii.gz* and a moving image (already aligned to the model) called moving.nii.gz and finally an elastix parameter file called [*Parameters_statismo.txt*](/resources/Parameters_statismo.txt).
