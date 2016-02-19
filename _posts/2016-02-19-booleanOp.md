@@ -6,7 +6,7 @@ tags:
 - Statismo
 
 
-date: 2016-02-08 11:45:00 +0200
+date: 2016-02-19 14:45:00 +0200
 title: Perform boolean operations on meshes in RvtkStatismo
 ---
 
