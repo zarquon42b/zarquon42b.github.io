@@ -10,7 +10,7 @@ date: 2016-02-29 14:45:00 +0200
 title: Displacement fields in mesheR
 ---
 
-Inspired by the awesome Shape Modelling [MOOC](https://www.futurelearn.com/courses/statistical-shape-modelling/), organized by the University of Basel, I decided to add interpolation of displacement fields in mesheR as well. For smoothing, I decided for a Gaussian smoother based on the displacement vectors of the k-closest domain points (a lot of useful stuff was already there from ```gaussMatch```)
+Inspired by the awesome Shape Modelling [MOOC](https://www.futurelearn.com/courses/statistical-shape-modelling/), organized by the University of Basel, I decided to add interpolation of displacement fields in mesheR as well. The interpolation is calculated by using the displacement vectors of the k-closest domain points and applying a Gaussian smoothing based on the distances to the domain points (a lot of useful stuff was already there from ```gaussMatch```)
 
 The functions added are:
 
