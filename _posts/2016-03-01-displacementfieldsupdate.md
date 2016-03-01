@@ -10,9 +10,9 @@ date: 2016-03-01 12:45:00 +0200
 title: Update&#58; Displacement fields and smoothing in mesheR 
 ---
 
-While I was at it, I also implemented different smoothers and made them also available to the registration function ```gaussMatch``` that is based on smooth displacement fields. Additionally, I introduced the function ```smoothDisplacementField```, to (surprise, surprise) smooth an existing displacement fields.
+While I was at it, I implemented different kernel smoothers and made them also available to the registration function ```gaussMatch``` that is based on smooth displacement fields. Additionally, I introduced the function ```smoothDisplacementField``` to *(surprise, surprise)* smooth an existing displacement field.
 
-The smoothing kernels are calculating weights according to a distance \\(d\\) between two points. Based on \\(d\\) and the kernel bandwidth \\(\sigma\\), the weights \\(w(d)\\) are calculated as:
+The smoothing is achieved by calculating weighted averages of neighbouring displacement vectors using kernel functions. These are functions of the distance \\(d\\) to the respective origin of the displacement vectors. Based on \\(d\\) and the kernel bandwidth \\(\sigma\\), the weights \\(w(d)\\) are calculated as:
 
 Gaussian kernel: \\(w(d) = e^{ -\frac{d^2}{2\sigma^2}}\\)
 
