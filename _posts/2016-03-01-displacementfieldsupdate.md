@@ -74,14 +74,14 @@ plotDisplacementField(highresdispfield_smooth,lwd=2) #Fig.3
 
 <a id="Fig1"></a>
 <figure class="left">
-    <img rel="zoom" src="/resources/images/displace_coarse.png" alt="example 1" width="150" >    
+    <img rel="zoom" src="/resources/images/displace_coarse.png" alt="example 1" height="250" >    
     <figcaption>Fig. 1: Displaced high resolution mesh with interpolated displacement field</figcaption>
 
 </figure> 
 
 <a id="Fig2"></a>
 <figure class="float">
-    <img rel="zoom" src="/resources/images/displace_smooth.png" alt="example 1" width="150" >    
+    <img rel="zoom" src="/resources/images/displace_smooth.png" alt="example 1"  height="250" >    
     <figcaption>Fig. 2: Displaced high resolution mesh with the smoothed interpolated displacement field</figcaption>
 
 </figure> 
