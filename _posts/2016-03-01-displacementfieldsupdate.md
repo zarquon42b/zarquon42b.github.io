@@ -10,7 +10,7 @@ date: 2016-03-01 12:45:00 +0200
 title: Update&#58; Displacement fields and smoothing in mesheR 
 ---
 
-While I was at it, I also implemented different smoothers and made them also available to the registration function ```gaussMatch``` that is based on smooth displacement fields. Additionally, I introduced the function ```smoothDisplacementfield```, to (surprise, surprise) smooth an existing displacement fields.
+While I was at it, I also implemented different smoothers and made them also available to the registration function ```gaussMatch``` that is based on smooth displacement fields. Additionally, I introduced the function ```smoothDisplacementField```, to (surprise, surprise) smooth an existing displacement fields.
 
 The smoothing kernels are calculating weights according to a distance \\(d\\) between two points. Based on \\(d\\) and the kernel bandwidth \\(\sigma\\), the weights \\(w(d)\\) are calculated as:
 
@@ -63,7 +63,7 @@ highres_displaced <- applyDisplacementField(highresdispfield,highres)
 shade3d(highres_displaced,col="white") ##Fig. 1
 
 ## as the result is not really smooth, we smooth the displacement field
-highresdispfield_smooth <- smoothDisplacementfield(highresdispfield,k=100,sigma = 100,threads = parallel::detectCores())
+highresdispfield_smooth <- smoothDisplacementField(highresdispfield,k=100,sigma = 100,threads = parallel::detectCores())
 highres_displaced_smooth <- applyDisplacementField(highresdispfield_smooth,highres)
 shade3d(highres_displaced,col="white") ##Fig. 2
 
@@ -71,6 +71,7 @@ shade3d(highres_displaced,col="white") ##Fig. 2
 ## finally we plot the smoohted displacement field
 plotDisplacementField(highresdispfield_smooth,lwd=2) #Fig.3 
 ```
+
 <a id="Fig1"></a>
 <figure class="left">
     <img rel="zoom" src="/resources/images/displace_coarse.png" alt="example 1" width="150" >    
