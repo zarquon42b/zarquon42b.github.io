@@ -54,8 +54,8 @@ dummytrans <- applyTransform(dummyhead.mesh,rigidtrans)
 ## create the lowres displacement field
 dispfield <- createDisplacementField(dummytrans,map$mesh)
 
-## create a highres version of the rotated/scaled reference
-highres <- vcgSubdivide(dummytrans,type="l",threshold = 1.5)
+## create a smooth highres version of the rotated/scaled reference
+highres <- vcgSmooth(vcgSubdivide(dummytrans,type="l",threshold = 1.5))
 
 ## interpolate displacement field
 highresdispfield <- interpolateDisplacementField(dispfield,highres,k=10,sigma=10,threads = parallel::detectCores())
@@ -65,7 +65,7 @@ shade3d(highres_displaced,col="white") ##Fig. 1
 ## as the result is not really smooth, we smooth the displacement field
 highresdispfield_smooth <- smoothDisplacementField(highresdispfield,k=100,sigma = 100,threads = parallel::detectCores())
 highres_displaced_smooth <- applyDisplacementField(highresdispfield_smooth,highres)
-shade3d(highres_displaced,col="white") ##Fig. 2
+shade3d(highres_displaced_smooth,col="white") ##Fig. 2
 
 
 ## finally we plot the smoohted displacement field
