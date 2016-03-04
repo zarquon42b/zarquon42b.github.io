@@ -7,14 +7,14 @@ tags:
 - mesheR
 
 date: 2016-03-04 14:15:00 +0200
-title: Update Displacement fields the 4th&#58; B-splines 
+title: Displacement fields the 4th&#58; B-splines 
 ---
 
-As RvtkStatismo is already sporting a B-spline kernel for Gaussian-Process models (a modified version contained in the [statismo command line tools](https://github.com/statismo/statismo/blob/master/modules/ITK/cli/utils/statismo-build-gp-model-kernels.h)), I decided to adapt that code and make it available in mesheR to allow displacment field smoothing using a B-spline kernel. Below, we modify the example from the documentation of ```gaussMatch``` to use a B-spline interpolation to smooth the displacement field. The downside, however, is the much slower performance (depending on the selected support value). Additionally, the default is to decrease the *support* value with each iteration, allowing less and less "wobbling". For the i-th generation: \\( sigma = sigma*f^{-(i-1)}\\). Thus, the values for ```f```, and accordingly```iterations```, need to be selected in a sensible fashion.
+As RvtkStatismo is already sporting a B-spline kernel for Gaussian-Process models (a modified version contained in the [statismo command line tools](https://github.com/statismo/statismo/blob/master/modules/ITK/cli/utils/statismo-build-gp-model-kernels.h)), I decided to adapt that code and make it available in mesheR to allow displacement field smoothing using a B-spline kernel. Below, we modify the example from the documentation of ```gaussMatch``` to use a B-spline interpolation to smooth the displacement field. The downside, however, is the much slower performance (depending on the selected support value). Additionally, the default is to decrease the *support* value with each iteration, allowing less and less "wobbling". For the i-th generation: \\( sigma = sigma*f^{-(i-1)}\\). Thus, the values for ```f```, and accordingly```iterations```, need to be selected in a sensible fashion.
 
 ## Example
  
-Below we see an example using a B-spline kernel with a starting  value of ```sigma = 20``` and let it decrease uniformly with each iteration using the default settings. The result is a nice and smooth deformation of an (already affinely registered) normal nose to a harlekin nose (<a href="#Vid1">Video 1</a>).
+Below, we see an example using a B-spline kernel with a starting  value of ```sigma = 20``` and let it decrease uniformly with each iteration using the default settings. The result is a nice and smooth deformation of an (already affinely registered) normal nose to a harlequin's nose (<a href="#Vid1">Video 1</a>).
 
 
 ```r
