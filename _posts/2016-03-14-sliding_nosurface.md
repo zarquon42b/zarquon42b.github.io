@@ -85,14 +85,13 @@ outline2 <- c(604:623)
 outlines <- 611:623
 outlines <- list(outline1,outline2)
 surp <- c(1:623)[-c(fix,outline1,outline2)]
-slideWithCurves <- slider3d(data, SMvector=fix, deselect=TRUE, surp=surp,
-                            meshlist=meshlist,iterations=3,outlines=outlines)
+slideWithCurves <- slider3d(data, SMvector=fix, deselect=TRUE, surp=surp, meshlist=meshlist,iterations=3,outlines=outlines)
 
 ## An example with sliding without meshes by estimating the surface from the
 ## semi-landmarks
 
-slideWithCurvesNoMeshes <- slider3d(data, SMvector=fix, deselect=TRUE, surp=surp,
-                            iterations=3,outlines=outlines)
+slideWithCurvesNoMeshes <- slider3d(data, SMvector=fix, deselect=TRUE, surp=surp,iterations=3,outlines=outlines)
+
 ## compare it to the data with surfaces for the 1st specimen
 deformGrid3d(slideWithCurves$dataslide[,,1],slideWithCurvesNoMeshes$dataslide[,,1],ngrid = 0)
 ```
