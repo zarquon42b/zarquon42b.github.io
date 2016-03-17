@@ -32,7 +32,7 @@ In order to test this, you need
 The following functions create matrix-valued kernels
 
 * `GaussianKernel`
-* `BsplineKernel`
+* `BSplineKernel`
 * `MultiscaleBSplineKernel`
 * `IsoKernel`
 * `StatisticalModelKernel`
