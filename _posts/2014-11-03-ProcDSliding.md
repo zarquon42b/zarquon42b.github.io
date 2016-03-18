@@ -11,7 +11,10 @@ title: Morpho&#58; Added sliding to minimize Procrustes distance and some though
 Responding to a user request, I implemented sliding of semi-landmarks in order to minimize Procrustes distance to the reference (as opposed to the already implemented bending energy criterion).
 So, I implemented it and tested a bit and found out that it may lead to odd distortions if one is dealing with large shape differences and/or surfaces including concave parts such as crevasses.
 
-Here are the tests (you will need to install "fastslide" branch from [GitHub](https://github.com/zarquon42b/Morpho/tree/fastslide)):
+Here are the tests <strike>(you will need to install "fastslide" branch from [GitHub](https://github.com/zarquon42b/Morpho/tree/fastslide)):</strike>
+
+ **EDIT:** Already contained in main Morpho now.
+
 <figure>
    <img rel="zoom" src="/resources/images/orig.png" alt="bending" width="250" >
   <figcaption><b>Fig. 1: </b>Red: semi-landmarks displaying a nose. Black: semi-landmarks displaying a grotesquely long nose.</figcaption>
@@ -43,6 +46,7 @@ angle.calc(rotProcD$X,rotProcD$Y)
 #[1] 0.1900396
 
 ```
+
 <table>
     <tr>
         <td>
@@ -53,9 +57,9 @@ angle.calc(rotProcD$X,rotProcD$Y)
         </td>
     
         <td>
-            <figure >
+            <figure>
                  <img rel="zoom" src="/resources/images/ProcD.png" alt="bending" height="200" >
-                <figcaption"><b>Fig. 3:</b> Blue: relaxed using Procrustes distance, Red: original.</figcaption>
+                <figcaption><b>Fig. 3:</b> Blue: relaxed using Procrustes distance, Red: original.</figcaption>
             </figure> 
        </td>
     </tr>
@@ -63,5 +67,5 @@ angle.calc(rotProcD$X,rotProcD$Y)
  
 
 
-##Conclusion
+## Conclusion
 While Procrustes distance is smaller with this method, the shape is undergoing great distortions, because the deformation is not necessarily smooth. So, as far as I am concerned, I would stick with the bending energy criterion, when applying the sliding method.
