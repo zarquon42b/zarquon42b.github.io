@@ -7,7 +7,7 @@ tags:
 
 
 date: 2016-08-01 11:45:00 +0200
-title: New Releases of Rvcg and Morpho&#58; new features, performance improvements and bugfixes
+title: New Releases of Rvcg and Morpho&#58; New features, performance improvements and bugfixes
 ---
 
 I am proudly presenting new new CRAN releases of **[Rvcg](https://cran.r-project.org/package=Rvcg)** and **[Morpho](https://cran.r-project.org/package=Morpho)**: 
