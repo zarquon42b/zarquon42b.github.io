@@ -27,7 +27,7 @@ The most significant changes are the optional use of external pointers to allow 
 
 #### bugfixes and minor changes 
 
- * fixed c++14 standard requirements
+ * fixed C++14 standard requirements
  * made index in `rmVertex` unique
  * `showPC`: for single PCs vectors of length> 1 are coerced to matrix
  * added option `margin` in `deformGrid3d` and `deformGrid2d`
