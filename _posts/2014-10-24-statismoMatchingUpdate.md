@@ -10,6 +10,10 @@ date: 2014-10-24 13:59:00 +0200
 title: UPDATE&#58; statismo models for elastic mesh registration in R
 ---
 
+## UPDATE: 10/2016
+*As the kernel interface has changed in July 2016 (read more [here](/2016/03/17/RvtkStatismo_new_kernels/)), I added the updated commands in the code section.*
+
+
 I changed/fixed some stuff in the interaction between RvtkStatismo and my matching routines (```gaussMatch``` and ```AmbergRegister```) which are:
 
 * class ```BayesDeform``` now has the additional parameter ```wt``` that allows to control the weight of the model's proposition against the weight by the (regularized) closest points/displacement field
@@ -37,7 +41,12 @@ data(dummyhead)
 
 
 ### first create a model based on the reference
-mymod <- statismoModelFromRepresenter(dummyhead.mesh,kernel = list(c(50,50)),ncomp = 100)## combine some Gaussian kernels
+
+
+## mymod <- statismoModelFromRepresenter(dummyhead.mesh,kernel = list(c(50,50)),ncomp = 100) ## Old Interface
+## new kernel interface as of 07/2016
+GK <- GaussianKernel(50,50)
+mymod <- statismoModelFromRepresenter(dummyhead.mesh,kernel=GK,ncomp = 100)
 
 ##now create an object of class BayesDeform
 
@@ -85,7 +94,10 @@ tar <- read.vtk("VSD002_femur.vtk")
 
 ref.lm <- as.matrix(read.csv("VSD001-lm.csv",row.names=1))
 tar.lm <- as.matrix(read.csv("VSD002-lm.csv",row.names=1))
-mymod <- statismoModelFromRepresenter(ref,kernel=list(c(50,50)),ncomp = 100)
+## mymod <- statismoModelFromRepresenter(ref,kernel=list(c(50,50)),ncomp = 100) ## Old Interface
+## new kernel interface as of 07/2016
+GK <- GaussianKernel(50,50)
+mymod <- statismoModelFromRepresenter(ref,kernel=GK,ncomp = 100) 
 
 Bayes <- createBayes(mymod,sdmax = rep(4,50),wt=1.5,shrinkfun = function(x,i){ x <- x*0.93^i})
 
