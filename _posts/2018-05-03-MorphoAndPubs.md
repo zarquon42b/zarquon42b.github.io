@@ -16,13 +16,13 @@ The first paper ist on extracting parts of a triangular mesh based on its visibi
 The second paper deals with retrodeforming fossil specimens with an emphasis on symmetrically placed semi-landmarks.
 
 
-1. <i>Profico A, Schlager S, Valoriani V, Buzi C, Melchionna M, Veneziano A, Raia P,
+1. <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ajpa.23493"><i>Profico A, Schlager S, Valoriani V, Buzi C, Melchionna M, Veneziano A, Raia P,
 Moggi-Cecchi J, Manzi G. 2018. Reproducing the internal and external anatomy of fossil
-bones: Two new automatic digital tools. American Journal of Physical Anthropology.</i>
+bones: Two new automatic digital tools. American Journal of Physical Anthropology.</i></a>
 
-2. <i>Schlager S, Profico A, Di Vincenzo F, Manzi G. 2018. Retrodeformation of fossil specimens
+2. <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194073"><i>Schlager S, Profico A, Di Vincenzo F, Manzi G. 2018. Retrodeformation of fossil specimens
 based on 3D bilateral semi-landmarks: Implementation in the R package "Morpho". PLOS
-ONE 13(3):1–19.</i>
+ONE 13(3):1–19.</i></a>
 
 
 
