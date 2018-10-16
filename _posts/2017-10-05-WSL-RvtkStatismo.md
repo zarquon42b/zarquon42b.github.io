@@ -24,7 +24,7 @@ Then follow the steps outlined here: [https://msdn.microsoft.com/de-de/commandli
 To do so, run the "Bash on Ubuntu on Windows" App which will open a terminal window. Issue the following commands, adding a repo for the latest R-version, as well as my ppa with the prebuilt Statismo binaries (I will use the development version here):
 
 ```bash
-sudo apt-add-repository ppa:marutter/rruttter
+sudo apt-add-repository ppa:marutter/rrutter
 sudo apt-add-repostiory ppa:zarquon42/statismo-develop
 sudo apt update
 sudo apt install statismo-dev r-base-dev
