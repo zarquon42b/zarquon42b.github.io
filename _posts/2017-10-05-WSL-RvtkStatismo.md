@@ -10,6 +10,11 @@ date: 2017-10-06 08:25:00 +0200
 title: Howto&#58; Installing RvtkStatismo on Windows 10 using WSL
 ---
 
+## Update: 1.10.2019
+* Added rrutter3.5 repo
+* Added notice about rstudio version
+
+
 Until recently, there was no feasible way to install RvtkStatismo on Windows due the virtual impossibility of compiling VTK and R with the same toolchain. However, Murat Maga (thanks for the heads up) brought my attention to the relatively new  Windows Subsystem for Linux (WSL) that can be installed on the latest Windows 10 builds. So I tried to install RvtkStatismo plus the popular R IDE Rstudio to allow for statistical shape modelling in R. Surprisingly, it worked pretty well. Below you can find a walk-through for doing so on your Windows 10 PC.
 
 
@@ -24,7 +29,7 @@ Then follow the steps outlined here: [https://msdn.microsoft.com/de-de/commandli
 To do so, run the "Bash on Ubuntu on Windows" App which will open a terminal window. Issue the following commands, adding a repo for the latest R-version, as well as my ppa with the prebuilt Statismo binaries (I will use the development version here):
 
 ```bash
-sudo apt-add-repository ppa:marutter/rrutter
+sudo apt-add-repository ppa:marutter/rrutter3.5
 sudo apt-add-repostiory ppa:zarquon42/statismo-develop
 sudo apt update
 sudo apt install statismo-dev r-base-dev
@@ -34,7 +39,8 @@ sudo apt install statismo-dev r-base-dev
 
 If you do not need an IDE, your are set now to install RvtkStatismo using the terminal (see below for the commands). If not, you need an X-server. The easiest way is to download and install [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html). Then open it and select Session => Shell => Terminal Shell => Ubuntu Bash (WSL). Do this everytime you want to use the WSL.
 
-Download [Rstudio version for ubuntu 16.04](https://www.rstudio.com/products/rstudio/download/) which will be a .deb file. To install it, use the MobaXterm terminal to run
+<strike>Download [Rstudio version for ubuntu 16.04](https://www.rstudio.com/products/rstudio/download/)</strike>
+Due to changes in rstudio, you will need a version <1.2.0, in my case [Rstudio 1.1.463](https://support.rstudio.com/hc/en-us/articles/206569407-Older-Versions-of-RStudio) worked fine. Download the *.deb* file. To install it, use the MobaXterm terminal to run
 
 ```
 sudo dpkg -i path_to_rstudio_deb_file 
