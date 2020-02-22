@@ -6,9 +6,13 @@ tags:
 - Linux
 - Windows
 
-date: 2017-10-06 08:25:00 +0200
+date: 2020-02-22 08:25:00 +0200
 title: Howto&#58; Installing RvtkStatismo on Windows 10 using WSL
 ---
+
+##  Update: 22.02.2020
+* Added installation of precompiled R-packages from PPA 
+* Removed the part on Windows 10 Creators Update
 
 ## Update: 1.10.2019
 * Added rrutter3.5 repo
@@ -19,10 +23,12 @@ Until recently, there was no feasible way to install RvtkStatismo on Windows due
 
 
 ## Install WSL
+Got to Microsoft Store and install the App Ubuntu 18.04
 
-I would definitely recommend to install the [Windows 10 Creators Update](https://support.microsoft.com/de-de/help/4028685/windows-get-the-windows-10-creators-update)
+<strike>I would definitely recommend to install the [Windows 10 Creators Update](https://support.microsoft.com/de-de/help/4028685/windows-get-the-windows-10-creators-update)
 
-Then follow the steps outlined here: [https://msdn.microsoft.com/de-de/commandline/wsl/install_guide](https://msdn.microsoft.com/de-de/commandline/wsl/install_guide)
+Then follow the steps outlined here: [https://msdn.microsoft.com/de-de/commandline/wsl/install_guide](https://msdn.microsoft.com/de-de/commandline/wsl/install_guide)</strike>
+
 
 ## Add the required repositories
 
@@ -30,9 +36,10 @@ To do so, run the "Bash on Ubuntu on Windows" App which will open a terminal win
 
 ```bash
 sudo apt-add-repository ppa:marutter/rrutter3.5
+sudo apt-add-repository ppa:marutter/c2d4u3.5
 sudo apt-add-repostiory ppa:zarquon42/statismo-develop
 sudo apt update
-sudo apt install statismo-dev r-base-dev
+sudo apt install statismo-dev r-base-dev r-cran-morpho r-cran-devtools
 ```
 
 ## Optional: Install X-server and Rstudio
@@ -63,11 +70,12 @@ rstudio
 
 ## Install RvtkStatismo
 
-Almost there now: We need to install the `devtools`package and then install RvtkStatismo
+Almost there now: We need to install the `devtools`package and then install *RvtkStatismo* and for using it in registration tasks I recommend installing *mesheR* as well
 
 ```r
-install.packages("devtools")
-devtools::install_github("zarquon42b/RvtkStatismo",ref="develop") 
+devtools::install_github("zarquon42b/RvtkStatismo",ref="develop")
+devtools::install_github("zarquon42b/mesheR")
+
 ## we chose the develop branch matching the statismo version above
 ```
 
