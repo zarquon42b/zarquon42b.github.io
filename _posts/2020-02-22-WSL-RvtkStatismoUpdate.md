@@ -7,7 +7,7 @@ tags:
 - Windows
 
 date: 2020-02-22 08:25:00 +0200
-title: UPDATE: Howto&#58; Installing RvtkStatismo on Windows 10 using WSL
+title: UPDATE Howto&#58; Installing RvtkStatismo on Windows 10 using WSL
 ---
 
 ##  Update: 22.02.2020
