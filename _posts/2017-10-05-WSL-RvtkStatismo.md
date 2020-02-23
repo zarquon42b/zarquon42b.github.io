@@ -37,7 +37,7 @@ To do so, run the "Bash on Ubuntu on Windows" App which will open a terminal win
 ```bash
 sudo apt-add-repository ppa:marutter/rrutter3.5
 sudo apt-add-repository ppa:marutter/c2d4u3.5
-sudo apt-add-repostiory ppa:zarquon42/statismo-develop
+sudo apt-add-repository ppa:zarquon42/statismo-develop
 sudo apt update
 sudo apt install statismo-dev r-base-dev r-cran-morpho r-cran-devtools
 ```
