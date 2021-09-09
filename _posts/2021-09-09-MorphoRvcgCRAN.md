@@ -15,7 +15,7 @@ Hi everyone, after quite some while without official updates, I am happy to anou
 Here is the complete list of changes in the latest Morpho (2.9) and Rvcg (0.20.2) releases
 
 
-## Morpho 0.29
+## Morpho 2.9
 
 ### New features and bug fixes
 
