@@ -9,7 +9,7 @@ title: Statismo packages now available for Ubuntu 22.04 LTS (Jammy Jellyfish)
 
 Hi everyone,
 
-with the advent of Ubuntu 22.04 (Jammy Jellyfish), I had to repackage the *statismo* C++ library, which I use to build the R-package [RvtkStatismo](https://github.com/zarquon42b/RvtkStatismo) that allows shape modelling in R. 
+with the advent of Ubuntu 22.04 (Jammy Jellyfish), I had to repackage the [*statismo*](https://github.com/statismo/statismo) C++ library, which I use to build the R-package [RvtkStatismo](https://github.com/zarquon42b/RvtkStatismo) that allows shape modelling in R. 
 
 The software packages can be found in my [PPA](https://launchpad.net/%7Ezarquon42/+archive/ubuntu/statismo-develop). As ubuntu 22.04 ships with ITK5 and VTK9, I took the chance to update and adapt the *statismo* code. Again, I had to fight badly to get everything linked correctly against the HDF5 library (it turned out that the path was included in the ITK_LIBRARY variable when using the Ubuntu packages). As before, there is also the *statismo-tools* package that brings some nifty command line tools that allow for some basic shape modeling routines.
 
