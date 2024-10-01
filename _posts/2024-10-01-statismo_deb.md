@@ -3,7 +3,7 @@ layout: post
 tags: 
 - statismo
 
-date: 2024-10-01 17:25:00 +0200
+date: 2024-10-01 16:25:00 +0200
 title: Statismo packages now available for Ubuntu 24.04 LTS (Noble Numbat)
 ---
 
